@@ -4,6 +4,7 @@ import * as omikuziCommand from '../commands/text/omikuzi.js';
 import * as echoCommand from '../commands/text/echo.js';
 import * as chooseCommand from '../commands/vote/choose.js';
 import * as dontFeedCommnad from '../commands/text/dont-feed.js';
+import * as whosaidCommand from '../commands/text/whosaid.js';
 import { Collection } from 'discord.js';
 
 export const commands = new Collection<string, any>();
@@ -13,3 +14,4 @@ commands.set(omikuziCommand.data.name, omikuziCommand);
 commands.set(echoCommand.data.name, echoCommand);
 commands.set(chooseCommand.data.name, chooseCommand);
 commands.set(dontFeedCommnad.data.name, dontFeedCommnad);
+commands.set(whosaidCommand.data.name, whosaidCommand);
