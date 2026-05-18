@@ -2,6 +2,7 @@ import { REST, Routes } from 'discord.js';
 import * as pingCommand from './commands/botest/ping.js';
 import * as meigenCommand from './commands/text/meigen.js';
 import * as omikuziCommand from './commands/text/omikuzi.js';
+import * as echoCommand from './commands/text/echo.js';
 
 //npx tsx --env-file=.env src/deploy-commands.tsでデプロイ
 
@@ -9,6 +10,7 @@ const commands = [
     pingCommand.data.toJSON(),
     meigenCommand.data.toJSON(),
     omikuziCommand.data.toJSON(),
+    echoCommand.data.toJSON()
 ];
 const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN!);
 
