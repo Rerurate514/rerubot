@@ -4,6 +4,7 @@ import * as meigenCommand from './commands/text/meigen.js';
 import * as omikuziCommand from './commands/text/omikuzi.js';
 import * as echoCommand from './commands/text/echo.js';
 import * as chooseCommand from './commands/vote/choose.js';
+import * as dontFeedCommnad from './commands/text/dont-feed.js';
 
 //npx tsx --env-file=.env src/deploy-commands.tsでデプロイ
 
@@ -12,7 +13,8 @@ const commands = [
     meigenCommand.data.toJSON(),
     omikuziCommand.data.toJSON(),
     echoCommand.data.toJSON(),
-    chooseCommand.data.toJSON()
+    chooseCommand.data.toJSON(),
+    dontFeedCommnad.data.toJSON()
 ];
 const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN!);
 
