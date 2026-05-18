@@ -5,6 +5,7 @@ import * as echoCommand from '../commands/text/echo.js';
 import * as chooseCommand from '../commands/vote/choose.js';
 import * as dontFeedCommnad from '../commands/text/dont-feed.js';
 import * as whosaidCommand from '../commands/text/whosaid.js';
+import * as excuseCommand from '../commands/text/excuse.js';
 import { Collection } from 'discord.js';
 
 export const commands = new Collection<string, any>();
@@ -15,3 +16,4 @@ commands.set(echoCommand.data.name, echoCommand);
 commands.set(chooseCommand.data.name, chooseCommand);
 commands.set(dontFeedCommnad.data.name, dontFeedCommnad);
 commands.set(whosaidCommand.data.name, whosaidCommand);
+commands.set(excuseCommand.data.name, excuseCommand);
