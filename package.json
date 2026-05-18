@@ -1,0 +1,28 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "Discord Bot",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts",
+    "deploy": "npx tsx --env-file=.env src/deploy-commands.ts"
+  },
+  "keywords": [],
+  "author": "First commiter: Rerurate_514, Project team: softtechtohtech.work",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.26.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.6.0",
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.1"
+  }
+}

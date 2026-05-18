@@ -1,0 +1,12 @@
+services:
+  discord-bot:
+    build: .
+    restart: always
+    env_file:
+      - .env
+    command: >
+      sh -c "npx tsx --env-file=.env src/deploy-commands.ts && npx tsx --env-file=.env src/index.ts"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - ./data:/app/data
