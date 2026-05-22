@@ -8,6 +8,7 @@ import * as dontFeedCommnad from './commands/text/dont-feed.js';
 import * as whosaidCommand from './commands/text/whosaid.js';
 import * as excuseCommand from './commands/text/excuse.js';
 import * as hypeCommand from './commands/text/hype.js';
+import * as letsgoCommand from './commands/text/letsgoo.js';
 
 //npx tsx --env-file=.env src/deploy-commands.tsでデプロイ
 
@@ -20,7 +21,8 @@ const commands = [
     dontFeedCommnad.data.toJSON(),
     whosaidCommand.data.toJSON(),
     excuseCommand.data.toJSON(),
-    hypeCommand.data.toJSON()
+    hypeCommand.data.toJSON(),
+    letsgoCommand.data.toJSON()
 ];
 const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN!);
 
